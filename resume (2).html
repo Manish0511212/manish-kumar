@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Kumar - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+         :root {
+            --primary-color: #3a86ff;
+            --secondary-color: #8338ec;
+            --dark-color: #1a1a2e;
+            --light-color: #f8f9fa;
+            --accent-color: #ff006e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .resume-container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-item i {
+            font-size: 1.2rem;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .left-column {
+            flex: 1;
+            min-width: 300px;
+            padding: 2rem;
+            background-color: var(--light-color);
+        }
+        
+        .right-column {
+            flex: 2;
+            min-width: 300px;
+            padding: 2rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .education-item,
+        .project-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .education-item h3,
+        .project-item h3 {
+            color: var(--dark-color);
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .education-item p,
+        .project-item p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .education-item .date,
+        .project-item .date {
+            color: var(--accent-color);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+        
+        ul {
+            list-style-position: inside;
+            padding-left: 5px;
+        }
+        
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .download-btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .btn-container {
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .left-column,
+            .right-column {
+                flex: 1;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        /* Animation */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .section {
+            animation: fadeIn 0.6s ease forwards;
+        }
+        
+        .section:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .section:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .section:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .section:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <h1>Manish Kumar</h1>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>manish05112@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 7982054507</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Faridabad Haryana, India</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left-column">
+                <div class="section">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I’m Manish Kumar, a recent B.Tech graduate in Computer Science. I enjoy learning new technologies and building small projects in HTML, CSS, and JavaScript. I’m a quick learner, detail-oriented, and like working on practical problems.
+                        Outside of studies, I like cricket and exploring new topics online.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills-container">
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">Problem Solving</span>
+
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Languages</h2>
+                    <ul>
+                        <li>English (Beginner)</li>
+                        <li>Hindi (Professional)</li>
+                        <li>Mother language(Conversational)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-item">
+                        <h3>Tarun niketan public school(class-10,2020)</h3>
+                        <h3>Tarun niketan public school(class-12,2023)</h3>
+                        <h3>Bachelor of Technology (B.Tech) in Computer Science</h3>
+                        <p>Srinivas University, Mangalore</p>
+                        <p class="date">2023 - 2027</p>
+                        <ul>
+                            <li>Percentage in class 10(58.4%)</li>
+                            <li>Percentage in class 12(51.2%)</li>
+                            <li>CGPA: 7.2/10</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">Certification</h2>
+                    <div class="Certification">
+                        <h3>Certification</h3>
+                        <ul>
+                            <li>certificate in Business Intelligence</li>
+                            <li>certification in RDBMS</li>
+                            <li>carrer essential in Software Develompent </li>
+                            <li>certificate in data visulzation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="project-item">
+                        <h3>Resume</h3>
+                        <p class="date">July 2025- August 2025</p>
+                        <ul>
+                            <li>Developed a responsive Resume using HTML, CSS, and JavaScript</li>
+                            <li>The site shows who I am, my skills, and the projects I’ve done, all in a clean and easy-to-read design</li>
+                            <li>I also added links to my email and social profiles so people can easily contact me.</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h2 class="section-title">Activities</h2>
+                        <ul>
+                            <li>Participated in Hackathon problem solving coding competitions (2024,2025)</li>
+                            <li>Enhanced problem-solving skills by building creative solutions under time pressure.</li>
+                            <li>Completed online certification in carrer essential in software develompent Fundamentals</li>
+                            <li>Volunteered to help coordinate college technical fests and sports meets.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button class="download-btn" id="downloadBtn">Download Resume</button>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('downloadBtn').addEventListener('click', function() {
+
+                alert('Download functionality would be implemented here. For now, you can print this page (Ctrl+P).');
+
+
+            });
+
+
+            const sections = document.querySelectorAll('.section');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(10px)';
+                section.style.transition = 'all 0.6s ease';
+                observer.observe(section);
+            });
+        </script>
+</body>
+
+</html>
